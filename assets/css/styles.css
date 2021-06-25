@@ -1,0 +1,56 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+td {
+    border-radius: .5rem;
+    position: relative;
+}
+
+td>div {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: -50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    border-radius: .5rem;
+}
+
+tr>* {
+    text-align: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    user-select: none;
+}
+
+th,
+.prev,
+.next {
+    color: rgb(189, 189, 189);
+}
+
+.agenda {
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 .5rem 1rem rgb(145, 145, 145);
+}
+
+.selected {
+    color: white;
+    background-color: rgb(80, 155, 253);
+    box-shadow: 0 0 .25rem .0625rem rgb(147, 186, 236);
+}
+
+.holiday:not(.selected) {
+    color: blue;
+}
+
+.holiday.selected {
+    color: white;
+}
